@@ -120,7 +120,7 @@ img {
 .tittle h1 {
   font-size: 1.5rem;
 }
-.tittle h3 {
+.tittle h2 {
   font-size: var(--fz-pergraph);
   color: var(--Green);
 }
@@ -136,6 +136,19 @@ img {
 }
 @media (min-width: 768px) {
   main {
-    width: 35%;
+    width: 50%;
+    padding: 2rem;
+  }
+  img {
+    width: 30%;
+  }
+}
+@media (min-width: 1024px) {
+  main {
+    width: 33%;
+    padding: 2.5rem;
+  }
+  img {
+    width: 25%;
   }
 }
