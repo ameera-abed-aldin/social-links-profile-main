@@ -113,6 +113,10 @@ img {
   padding: 0.7rem 1rem 0.7rem 1rem;
   border-radius: 0.5rem;
 }
+.social_media_account:hover {
+  background-color: var(--Green);
+  color: var(--Off-Black);
+}
 .tittle h1 {
   font-size: 1.5rem;
 }
@@ -125,13 +129,13 @@ img {
   color: hsla(0, 0%, 100%, 0.5);
   font-weight: var(--fw-400);
 }
-@media (min-width: 600px)  {
+@media (min-width: 600px) {
   main {
     width: 60%;
   }
 }
 @media (min-width: 768px) {
-    main {
-      width: 40%;
-    }
+  main {
+    width: 35%;
+  }
 }
