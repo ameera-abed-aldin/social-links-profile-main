@@ -33,7 +33,7 @@
     4. Improve text rendering
   */
 body {
-  line-height: 1.5;
+  line-height: 1.1;
   -webkit-font-smoothing: antialiased;
 }
 /*
@@ -77,78 +77,66 @@ h6 {
 }
 
 /* custmize styles */
-body {
+body{
+  font-size: var(--fw-600);
   font-family: var(--ff-base);
-  color: var(--White);
-  font-weight: var(--fw-600);
+  margin-inline: 1rem;
   height: 100vh;
+  display:grid;
+  place-content: center;
   background-color: var(--Off-Black);
-  display: grid;
-  place-items: center;
+  color:var(--White);
+  font-size: var(--fz-pergraph);
 }
-main {
-  width: 85%;
-  min-height: 80%;
+main{
   background-color: var(--Dark-Grey);
-  padding: 1.5rem;
-  display: grid;
-  gap: 1.5rem;
+  max-width:35rem;
+  max-height: 38.75rem;
+  padding:2rem 2rem;
+  border-radius: .7rem;
+  display:grid;
+  gap:1.5rem;
   text-align: center;
-  border-radius: 1rem;
-}
-img {
-  border-radius: 50%;
-  display: block;
-  margin: 0 auto;
-  width: 35%;
-}
 
-.social_media {
-  display: grid;
-  gap: 1rem;
-  font-size: var(--fz-pergraph);
 }
-.social_media_account {
-  background-color: var(--Grey);
-  padding: 0.7rem 1rem 0.7rem 1rem;
-  border-radius: 0.5rem;
+.avatar-img{
+  width:5.6rem;
+  border-radius: 50%;
+  display:block;
+  margin-inline: auto;;
 }
-.social_media_account:hover {
-  background-color: var(--Green);
-  color: var(--Off-Black);
-}
-.tittle h1 {
+h1{
   font-size: 1.5rem;
+  font-weight: var(--fw-600);
+  margin-bottom: .5rem;
 }
-.tittle h2 {
-  font-size: var(--fz-pergraph);
+.location{
   color: var(--Green);
+  font-weight: var(--fw-600);
 }
-.descrption {
-  font-size: var(--fz-pergraph);
-  color: hsla(0, 0%, 100%, 0.5);
+.descrption{
+  color:hsla(0, 0%, 100%, 0.7);
   font-weight: var(--fw-400);
 }
-@media (min-width: 600px) {
-  main {
-    width: 60%;
-  }
+.social-media {
+  display:grid;
+  gap:.8rem
 }
-@media (min-width: 768px) {
-  main {
-    width: 50%;
-    padding: 2rem;
-  }
-  img {
-    width: 30%;
-  }
+.social-media li{
+  list-style: none;
+  background-color: var(--Grey);
+  border-radius: .5rem;
+  font-weight: var(--fw-600);
+
 }
-@media (min-width: 1024px) {
-  main {
-    width: 33%;
-    padding: 2.5rem;
-  }
-  img {
-    width: 25%;
-  }
+.social-media li a{
+  display: block;
+  width:100%;
+  text-decoration: none;
+  color:var(--White);
+  padding:.8rem 1rem;
+}
+.social-media li:hover a{
+  background-color: var(--Green);
+  color:var(--Off-Black);
 }
